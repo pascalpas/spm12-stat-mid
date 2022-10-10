@@ -5,6 +5,10 @@ Preprocessing, QC and statistical analysis of the Monetary Incentive Delay task 
 SPM12 required
 
 ## Usage
+```
+install and add spm12 to MATLAB path
+add spm12-stat-mid and subfolders to path, i.e. addpath(genpath('spm-stat-mid')
+```
 
 ### Preprocessing
 
