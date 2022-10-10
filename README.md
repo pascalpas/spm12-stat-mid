@@ -12,25 +12,25 @@ add spm12-stat-mid and subfolders to path, i.e. addpath(genpath('spm-stat-mid')
 
 ### Preprocessing
 
-> preproc_2DEPI(subjectDir,subjectName,anatomy,func,scanTR,mbFactor)
+> preproc_2DEPI(subjectDir,subjectName,anatomy,func,TR,mbFactor)
 ```
 Input:
-subjectDir:     directoryname of subject;
-subjectName:    subject name;
+subjectDir:     main subjectDir
+subjectName:    subject name (beginning of filenames)
 anatomy:        anatomical dir name
 func:           functional dir name
-scanTR:         TR of functionals (e.g. 1)
+TR:             TR in seconds
 mbFactor:       multiband factor for slice timing  (e.g. 3)
 ```
 
 ### Statistical analysis
 
-> SPM_stat_job_MID(analysisDir,funcDir,behavDir,TR,outputDir)
+> SPM_stat_job_MID(subjectDir,funcDir,behavDir,TR,outputDir)
 ```
 Input:
-analysisDir:    main subjectDir
+subjectDir:     main subjectDir
 funcDir:        directory containing preprocessed functionals
-behavFile:      path to behavioral file
+behavDir:       dir containing behavfile
 TR:             TR in seconds
 OutputDir:      Output directory for statistical results
 
