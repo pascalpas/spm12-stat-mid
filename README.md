@@ -1,4 +1,4 @@
-# MID_SPM12_stat
+# spm12-stat-mid
 
 Preprocessing, QC and statistical analysis of the Monetary Incentive Delay task (MID) 
 
