@@ -65,7 +65,7 @@ TR = scanTR;
 nSlices = size(y_b,3);
 num_slices = nSlices;
 
-fname = '/data/home/3280411/DATA/extern/BATCHES/sub-Posval10-0060_rest.json';
+fname = fullfile(localDir,'/sub-Posval10-0060_rest.json');
 fid = fopen(fname); 
 raw = fread(fid,inf); 
 str = char(raw'); 
